@@ -5,6 +5,12 @@ Interactive and real-time tools for assisting voicing and singing training. One 
 
 Clone or download this repository. Set working path of MATLAB to the src directory. Then, type the following commands. Each command invokes each GUI tool. Please click "QUIT" button for the first time.
 
+```
+realtimeFoSplViewer
+waveletVisualizer
+detailInspector
+```
+
 ## Directories
 
 This distribution has two direcotories, "src" and "doc". The "src" directory consists of GUI tools and component functions. The "doc" directory consists of the technical document and the reference manual with a brief introduction titled "Getting started".
