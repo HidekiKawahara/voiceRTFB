@@ -25,6 +25,15 @@ This directory consists of the following tools:
 
 ### doc
 
+(Tentatively place holder only)
+
+## Links: reference
+
+The following articles provides technical information.
+
+* Hideki Kawahara, Ken-Ichi Sakakibara, Eri Haneishi, Kaori Hagiwara: Real-time and interactive tools for vocal training based on an analytic signal with a cosine series envelope, arXiv preprint arXiv:1909.03650, [PDF](https://arxiv.org/pdf/1909.03650)
+
 ## Update history
 
+### 16 September, 2019: added a link to arXiv
 ### 11 September, 2019: pre-release
