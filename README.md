@@ -23,6 +23,10 @@ This directory consists of the following tools:
 * waveletVisualizer
 * detailInspector
 
+![realtime pitch and SPL](rtFoSpl.jpg)
+![realtime wavelet](rtwavelet.jpg)
+![interactive inspector](detailedInspect.jpg)
+
 ### doc
 
 (Tentatively place holder only)
