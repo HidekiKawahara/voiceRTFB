@@ -22,10 +22,12 @@ This directory consists of the following tools:
 * realtimeFoSplViewer
 * waveletVisualizer
 * detailInspector
+* voiceProfilerExperimentt 
 
 ![realtime pitch and SPL](rtFoSpl.jpg)
 ![realtime wavelet](rtwavelet.jpg)
 ![interactive inspector](detailedInspect.jpg)
+![Valued Voice Range Profiler, experimental version](VVRPexperimental.jpg)
 
 ### doc
 
@@ -39,5 +41,6 @@ The following articles provides technical information.
 
 ## Update history
 
+### 26 October, 2019: added the experimental version of Valued Voice Range Profiler
 ### 16 September, 2019: added a link to arXiv
 ### 11 September, 2019: pre-release
