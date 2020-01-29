@@ -13,7 +13,7 @@ switch nargin
         temporalLocations = 0:windowShiftInms/1000:(length(x)-1)/fs;
     case 6
         temporalLocations = segment(1):windowShiftInms/1000:segment(2);
-end;
+end
 temporalLocationsInSamples = round(temporalLocations*fs);
 w = feval(windowType,2*halfWindowLength+1);
 baseIndex = -halfWindowLength:halfWindowLength;
@@ -25,11 +25,12 @@ for ii = 1:nFrames
     tmpPwr = abs(fft(w.*x(max(1,min(length(x),baseIndex+temporalLocationsInSamples(ii)))),fftl)).^2;
     rawSpectrogram(:,ii) = tmpPwr(1:fftl/2+1);
     normalizedSpectrogram(:,ii) = rawSpectrogram(:,ii)/sum(rawSpectrogram(:,ii));
-end;
+end
 maxPower = max(max(rawSpectrogram));
 sg = 10*log10(rawSpectrogram/maxPower + 0.0000000000001);
 sgramStr.dBspectrogram = sg;
 sgramStr.rawSpectrogram = rawSpectrogram;
+sgramStr.rawSpectrogramNormalized = rawSpectrogram / fftl / sum(w.^2) * 2;
 sgramStr.normalizedSpectrogram = normalizedSpectrogram;
 sgramStr.frequencyAxis = (0:fftl/2)/fftl*fs;
 sgramStr.temporalPositions = temporalLocations;
