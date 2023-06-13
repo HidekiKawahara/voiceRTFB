@@ -199,14 +199,20 @@ for ii = 1:length(chromaticScale)
 end
 axes(myGUIdata.GcrefAxis);
 %imshow('gclefsg2.jpg');
-aaa = imread('gclefsg2.jpg');
-aaa(aaa > 230) = round(237/255*63);
-image(aaa); colormap(gray);axis off
+%aaa = imread('gclefsg2.jpg');
+[X,map,alpha] = imread('gclefsg2.png');
+%aaa(aaa > 230) = round(237/255*63);
+%image(aaa); 
+image(X,"AlphaData",alpha)
+colormap(gray);axis off
 axes(myGUIdata.FcrefAxis);
 %imshow('fclefsg2.jpg');
-aaa = imread('fclefsg2.jpg');
-aaa(aaa > 230) = round(237/255*63);
-image(aaa); colormap(gray);axis off
+%aaa = imread('fclefsg2.jpg');
+[X,map,alpha] = imread('fclefsg2.png');
+%aaa(aaa > 230) = round(237/255*63);
+%image(aaa); 
+image(X,"AlphaData",alpha)
+colormap(gray);axis off
 axes(myGUIdata.FcrefAxis);
 axes(myGUIdata.musicalAxis);
 gclefstaff = myGUIdata.A4frequency * 2 .^ ([-5 -2 2 5 8] / 12);

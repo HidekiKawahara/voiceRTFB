@@ -34,6 +34,7 @@ sgramStr.rawSpectrogramNormalized = rawSpectrogram / fftl / sum(w.^2) * 2;
 sgramStr.normalizedSpectrogram = normalizedSpectrogram;
 sgramStr.frequencyAxis = (0:fftl/2)/fftl*fs;
 sgramStr.temporalPositions = temporalLocations;
+sgramStr.window = w;
 sgramStr.samplingFrequency = fs;
 sgramStr.waveform = x;
 sgramStr.windowLengthInms = windowLengthInms;
