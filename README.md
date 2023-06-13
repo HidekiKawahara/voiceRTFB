@@ -41,6 +41,7 @@ The following articles provides technical information.
 
 ## Update history
 
+### 13 June, 2023: fixed color related bugs
 ### 29 January, 2020: added a field rawSpectrogramNormalized which remove effects of windowing
 ### 26 October, 2019: added the experimental version of Valued Voice Range Profiler
 ### 16 September, 2019: added a link to arXiv
